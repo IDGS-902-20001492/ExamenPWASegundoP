@@ -1,0 +1,62 @@
+/* styles.css */
+.carousel {
+    width: 100%;
+    /* Ajusta según tu diseño */
+    padding: 1%;
+    margin: 0 auto;
+}
+
+.carousel .slide {
+    background: #f4f4f4;
+    /* Color de fondo de cada diapositiva */
+    border: 1px solid #ddd;
+    /* Borde de cada diapositiva */
+    padding: 20px;
+    text-align: center;
+    ;
+}
+
+.carousel .thumb {
+    max-width: 80px;
+    max-height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.carousel .thumb img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.bg-bg {
+    background: linear-gradient(to right, #ffffff, skyblue);
+}
+
+.movil {
+    display: none;
+}
+
+.escritorio {
+    display: flex;
+}
+
+.atributos {
+    margin: 3%;
+}
+
+.barraCal {
+    width: 90%;
+}
+
+/*Mediaqueries para moviles*/
+@media (max-width: 767px) {
+    .movil {
+        display: block;
+    }
+
+    .escritorio {
+        display: none;
+    }
+}

@@ -1,0 +1,103 @@
+/* Home.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    white-space: nowrap;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #252525;
+}
+
+.sub-titulo {
+    font-size: 1.2rem;
+    color: #323232;
+}
+
+.container-busqueda {
+    display: flex;
+    width: 60%;
+    margin-bottom: 15px;
+}
+
+.input-busqueda {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.conatiner-button {
+    display: flex;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: 000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: 0.3s ease-in-out;
+    background-color: darkblue;
+}
+
+.icono {
+    font-size: 3em;
+    text-align: center;
+}
+
+/*Hacemos un degradado en el container-principal*/
+.container-principal {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4)), url('../assets/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    /* Inicialmente establecemos la opacidad en 0 */
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.link-button {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sug {
+    margin: 0.3em;
+    padding: 0.5em;
+    border-radius: 30%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    color: black;
+    /*Ponemos el background en aqua pero con rgb para ponerle la opacidad en 0.5*/
+    background: rgb(0, 255, 255, 0.5);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

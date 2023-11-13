@@ -1,0 +1,181 @@
+/* Results.css */
+
+/* Estilos generales para el contenedor de resultados */
+.results-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilos para cada tarjeta de producto */
+.product-card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 16px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    background: linear-gradient(90deg, #fff, #e8f5ff);
+    /*Agregamos un ligero boxshadow*/
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Estilos para la imagen del producto */
+.product-image {
+    flex: 1;
+    margin-right: 16px;
+    /* Espacio entre la imagen y el texto */
+}
+
+/* Estilos para los detalles del producto */
+.product-details {
+    flex: 2;
+}
+
+/* Estilos para el título del producto */
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilos para la descripción del producto */
+.product-description {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-busqueda {
+    margin-top: 0.5em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el precio del producto */
+.product-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+    /* Color azul como en MercadoLibre */
+}
+
+/* Estilos para el stock del producto */
+.product-stock {
+    font-size: 14px;
+    color: #28a745;
+    /* Color verde como en MercadoLibre */
+}
+
+.btnresult {
+    margin-left: -6em;
+    margin-bottom: -50px;
+    display: relative;
+}
+
+/* Estilos para la calificación del producto */
+.product-rating {
+    font-size: 14px;
+    color: green;
+    font-weight: bold;
+    /* Color amarillo como en MercadoLibre */
+}
+
+.img {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Estilos para la calificación del producto */
+.star-rating {
+    display: inline-block;
+    position: relative;
+    font-size: 0;
+}
+
+.stars-inner {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+}
+
+.stars-outer {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Estilos para las estrellas */
+.star-rating::before {
+    content: '\2605\2605\2605\2605\2605';
+    color: #ffc107;
+    font-size: 20px;
+}
+
+.stars-inner::before {
+    content: '\2605\2605\2605\2605\2605';
+    color: #f8ce0b;
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+}
+
+/* Ajusta el tamaño de las estrellas según tus preferencias */
+.rating-bar {
+    height: 20px;
+    width: 100%;
+    background-color: #eee;
+}
+
+.bar-inner {
+    height: 100%;
+    background-color: #ffc107;
+    /* Color de fondo según el rating */
+}
+
+.container-busqueda-resultado {
+    margin-top: 1em;
+    display: flex;
+    width: 90%;
+    margin-bottom: 0px;
+}
+
+.resultados-busqueda {
+    text-align: center;
+}
+
+.producto-click {
+    cursor: pointer;
+}
+
+.link-b {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Mediaqueries para moviles*/
+@media (max-width: 767px) {
+    .product-card {
+        width: 95%;
+    }
+
+    .img {
+        width: 90%;
+        height: 90%;
+
+    }
+
+    .input-busqueda {
+        width: 20%;
+    }
+
+    .btnresult {
+        margin-left: -6em;
+        margin-bottom: -50px;
+        display: relative;
+    }
+}
